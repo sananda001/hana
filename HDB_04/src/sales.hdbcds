@@ -1,0 +1,10 @@
+namespace SAPCLOUD_04.HDB_04;
+
+context sales {
+};
+
+/*@@layout{"layoutInfo":{"x":-195,"y":52.5}}*/
+entity Sales_head {
+    key order_id : String(10);
+        Name     : String(10);
+};

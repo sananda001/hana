@@ -1,0 +1,20 @@
+ID: SAPCLOUD_04
+_schema-version: '2.1'
+description: Git Repository
+version: 0.0.1
+
+modules:
+ - name: HDB_04
+   type: hdb
+   path: HDB_04
+   requires:
+    - name: hdi_HDB_04
+
+resources:
+ - name: hdi_HDB_04
+   parameters:
+      config:
+         schema: shailesh_04
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
