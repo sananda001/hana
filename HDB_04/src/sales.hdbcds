@@ -8,4 +8,5 @@ entity Sales_head {
     key order_id : String(10);
         Name     : String(10);
         Country	 : String(10);
+        Address  : String(10);
 };
